@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "harukablack",
+	"version": "${version}",
+	"name": "Haruka Black",
+	"description": "This time, I won't forget.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/harukablack/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.viennetta.harukablack.HarukaBlack"
+		],
+		"client": [
+			"net.viennetta.harukablack.HarukaBlackClient"
+		],
+		"fabric-datagen": [
+			"net.viennetta.harukablack.HarukaBlackDataGenerator"
+		]
+	},
+	"mixins": [
+		"harukablack.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
